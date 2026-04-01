@@ -1,20 +1,15 @@
-import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import React, { useState } from 'react';
+import Lista from './lista';
+import Original from './original';
 
-export default function App() {
-  return (
-    <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
-      <StatusBar style="auto" />
-    </View>
-  );
+function Menu() {
+  const [pantalla, setPantalla] = useState('Lista');
+  if (pantalla === 'Lista') {
+        return <Lista irAOriginal={() => setPantalla('Original')} />;
+  }
+  if (pantalla === 'Original') {
+    return <Original volverALista={() => setPantalla('Lista')} />;
+  }
+  return null;
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
+export default Menu;
