@@ -21,15 +21,16 @@
         "backgroundColor": "#ffffff"
       },
       "edgeToEdgeEnabled": true,
-      "package": "com.ronald4992.RJNBasket"
+      "package": "com.ronald4992.rnjbasket"
     },
     "web": {
       "favicon": "./assets/favicon.png"
     },
     "extra": {
       "eas": {
-        "projectId": "2eb3ad2a-0632-4cac-844c-574841557015"
+        "projectId": "0e774086-17b3-4947-9108-be0080711314"
       }
-    }
+    },
+    "owner": "julianlozanoh"
   }
 }
